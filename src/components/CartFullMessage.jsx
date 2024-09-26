@@ -3,6 +3,7 @@ import { useDispatch } from 'react-redux'
 import {setBuyComp} from '../redux_manager/slices/enableBuy'
 
 const CartFullMessage = () => {
+  //Here we create a variable dispatch from the function useDispatch provided by the redux to acces the actions of the enbleBuy state to change it state.
     const dispatch = useDispatch()
 
 

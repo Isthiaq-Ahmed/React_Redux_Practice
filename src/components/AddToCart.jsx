@@ -5,7 +5,7 @@ import { addToCart, removeFromCart } from '../redux_manager/slices/cartCountSlic
 
 
 const AddToCart = () => {
-
+      // Here we are using the dispact provided buy the redux to manipulate the values of our cartCount state using the actions like addToCart and removeFromCart.
     let dispatch = useDispatch()
    
   return (

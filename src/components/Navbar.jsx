@@ -3,6 +3,7 @@ import { useSelector } from 'react-redux'
 
 
 const Navbar = () => {
+  // Here we are getting the value of cartCount state from our redux store and displaying it the Navbar.
 
     let cartCount = useSelector(state => state.cartCount)
    

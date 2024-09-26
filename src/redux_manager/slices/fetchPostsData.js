@@ -1,6 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 import fetchData from "../../components/Api/fetchData";
 
+// This is our slice for the fetch request that we are doing to get the posts data from a web api.
 
 const initialState ={
     data:  [],

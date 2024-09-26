@@ -6,8 +6,11 @@ import { useDispatch } from 'react-redux'
 
 
 const FetchData =  () => {
+
     const dispatch = useDispatch()
+    //Here we are getting the Post data from our redux store from the postsData state.
     const postsData = useSelector((state) => state.postsData);
+    //Here these are some value that our postsData Provide to be used in the component.
     const {data, loading, error} = postsData
     console.log(postsData)
 
@@ -19,15 +22,16 @@ const FetchData =  () => {
     },[])
   return (
     <Box>
+      {/* here we are using the ternary operator to dispay certain elements */}
         {loading ? 
-            <div>Loading....</div>
+            <Box>Loading....</Box>
         : 
         error ? 
-        <div> {error}</div>
+        <Box> {error}</Box>
         : 
         data.slice(1, 10).map((dataItem)=>(
             <Typography fontSize={12}  key={dataItem.id}>
-                <h1>{dataItem.title}</h1>
+                <Typography>{dataItem.title}</Typography>
             </Typography>
           ))
     }

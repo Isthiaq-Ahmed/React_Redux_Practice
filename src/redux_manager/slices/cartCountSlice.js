@@ -1,5 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+
+// This slice is created to store the state value of our cart count we can use the provided action to increase or decrease the value of the state .
 const initialState = {
     value: 0
 }

@@ -1,5 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
+// This is a slice for enableBuy component which have a state value of bool it can either be ture or false the initial value of this state is false . we can change the value of the state with setBuyComp action.
+
 const initialState = {
     value: false
 }
